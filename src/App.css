@@ -1,0 +1,92 @@
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0b7dda;
+}
+
+form ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+.gist{
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gist  a{
+  text-decoration: none;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.gist img{
+  width: 40px;
+  margin-right: 10px;
+}
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+.label-default{
+  background-color: #777
+}
+.label-primary {
+  background-color: #337ab7;
+}
+.label-success {
+  background-color: #5cb85c;
+}
+.msg-error{
+  background: #f44336;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid;
+  display: none;
+}
+.msg-error.active{
+  display: block;
+}
